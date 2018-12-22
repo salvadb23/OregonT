@@ -1,0 +1,148 @@
+html {
+  height: 100%;
+}
+ 
+body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: Open Sans;
+}
+
+.info-container {
+  grid-area: a;
+  width: 820px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+
+}
+
+.hidden {
+  display: none;
+}
+ 
+#home {
+  background-color: red;
+}
+ 
+#journey {
+  height: 100%;
+  background-color: #111;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "b"
+                       "a";
+}
+ 
+#event {
+  background-color: magenta;
+}
+ 
+#progress-area {
+  position: relative;
+  width: 800px;
+  margin: auto;
+  grid-area: b;
+  padding-top: 10px;
+}
+ 
+#trees {
+  height: 470px;
+  width: 100%;
+  image-rendering: pixelated;
+  box-sizing: border-box;
+  border: 1px black solid;
+}
+ 
+#caravan {
+  width: 100px;
+  height: 100px;
+  image-rendering: pixelated;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  
+}
+ 
+#stats-area {
+  color: white;
+  background-color: black;
+  float: left;
+  height: 150px;
+  width: 156px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px white solid;
+}
+ 
+ 
+ 
+.stat-value {
+  float: right;
+}
+ 
+#updates-area {
+  color: white;
+  background-color: black;
+  float: left;
+  width: 350px;
+  margin: 10px;
+  height: 150px;
+  padding: 10px;
+  font-size: 12px;
+  overflow-y: scroll;
+  border: 1px white solid;
+}
+ 
+.update-positive {
+  color: #669966;
+}
+ 
+.update-negative {
+  color: red;
+}
+ 
+.update-neutral {
+  color: #90908F;
+}
+ 
+#shop {
+  color: white;
+  float: left;
+  background-color: black;
+  margin: 10px;
+  padding: 10px;
+  height: 90px;
+  width: 350px;
+  border: 1px white solid;
+}
+ 
+.product {
+  float: left;
+  margin: 5px;
+  padding: 2px;
+  border: 1px solid white;
+  font-size: 12px;
+}
+ 
+#shop button {
+  clear: both;
+  float: left;
+  margin: 5px;
+}
+ 
+#attack {
+  color: white;
+  float: left;
+  background-color: black;
+  margin: 10px;
+  padding: 10px;
+  height: 60px;
+  width: 150px;
+  border: 1px white solid;
+}
